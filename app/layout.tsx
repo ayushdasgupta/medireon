@@ -18,6 +18,19 @@ export const metadata: Metadata = {
   icons: {
     icon: "/app.ico", 
   },
+  openGraph: {
+    title: "Medireon - Launching Soon",
+    description: "Medireon is a cloud-based Hospital Management System (HMS) that empowers healthcare providers with patient management, billing, EMR, telemedicine, and analytics.",
+    url: "https://www.medireonhealth.com",
+    siteName: "Medireon",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    title: "Medireon - Launching Soon",
+    description: "Medireon is a cloud-based Hospital Management System (HMS) that empowers healthcare providers with patient management, billing, EMR, telemedicine, and analytics.",
+    creator: "@ayushdasgupta01",
+  },
 };
 
 export default function RootLayout({
