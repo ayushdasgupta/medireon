@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { motion, useInView } from 'motion/react';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 
 import { APPNAME, demoURL } from '@/constraint';
 

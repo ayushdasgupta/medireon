@@ -3,7 +3,7 @@ import { APPNAME } from '@/constraint';
 import { motion } from 'motion/react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {
-  FaEnvelope, FaMapMarkerAlt
+  FaEnvelope, 
 } from 'react-icons/fa';
 
 const containerVariants = {

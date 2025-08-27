@@ -2,7 +2,6 @@
 import { motion } from 'motion/react';
 import { CheckCircle } from 'lucide-react';
 import Image from 'next/image';
-import { useState } from 'react';
 
 import { APPNAME, demoURL } from '@/constraint';
 

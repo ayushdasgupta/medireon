@@ -408,7 +408,7 @@ const Pricing: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-gray-600 mt-4 max-w-2xl mx-auto"
           >
-            Simple, transparent pricing to fit your facility's needs. Start with what you need, upgrade anytime.
+            Simple, transparent pricing to fit your facility&apos;s needs. Start with what you need, upgrade anytime.
           </motion.p>
         </div>
 

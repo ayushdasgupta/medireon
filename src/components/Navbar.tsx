@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
-import { Home, Info, Star, Gift, Phone, BanknoteArrowDown } from "lucide-react";
+import { Home, Info, Star, Gift, Phone, BanknoteArrowDown, LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { APPNAME } from "@/constraint";
@@ -10,7 +10,7 @@ import { APPNAME } from "@/constraint";
 interface NavItem {
   name: string;
   url: string;
-  icon: any;
+  icon: LucideIcon;
 }
 
 export default function Navbar() {
@@ -25,7 +25,7 @@ export default function Navbar() {
 
   const [activeTab, setActiveTab] = useState(menuItems[0].name);
   const [isMobile, setIsMobile] = useState(false);
-  const [isClickScrolling, setIsClickScrolling] = useState(false);
+  const [, setIsClickScrolling] = useState(false);
   const [isNavbarVisible, setIsNavbarVisible] = useState(false);
 
   const hideTimeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -110,7 +110,7 @@ useEffect(() => {
   });
 
   return () => observer.disconnect();
-}, []);
+});
 
   return (
     <div

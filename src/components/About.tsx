@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode } from 'react';
+import { JSX, ReactNode } from 'react';
 import Image from 'next/image';
 import { motion } from 'motion/react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -151,12 +151,12 @@ export default function About() {
     </section>
   );
 }
+type IconType = 'heart' | 'pill' | 'cross';
 
-// Medical icon component
-const MedicalIcon = ({ icon = "heart" }: { icon?: string }) => {
-  const icons = {
+const MedicalIcon = ({ icon = "heart" }: { icon?: IconType }) => {
+  const icons: Record<IconType, JSX.Element> = {
     heart: (
-      <motion.div 
+      <motion.div
         animate={{ y: [0, -15, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       >
@@ -166,7 +166,7 @@ const MedicalIcon = ({ icon = "heart" }: { icon?: string }) => {
       </motion.div>
     ),
     pill: (
-      <motion.div 
+      <motion.div
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
       >
@@ -176,7 +176,7 @@ const MedicalIcon = ({ icon = "heart" }: { icon?: string }) => {
       </motion.div>
     ),
     cross: (
-      <motion.div 
+      <motion.div
         animate={{ rotate: [0, 10, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       >
@@ -186,6 +186,6 @@ const MedicalIcon = ({ icon = "heart" }: { icon?: string }) => {
       </motion.div>
     )
   };
-  
-  return icons[icon] || icons.heart;
+
+  return icons[icon];
 };
