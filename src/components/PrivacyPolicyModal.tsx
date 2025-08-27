@@ -201,7 +201,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }:PrivacyPolicyModa
             If you have any questions or concerns regarding this Privacy Policy, please contact:
           </p>
           <p>
-            📧 <a href="mailto:{APPNAME}.hms@gmail.com" className="text-blue-600 hover:underline">{APPNAME}.hms@gmail.com</a>
+            📧 <a href={`mailto:${APPNAME.toLowerCase()}.hms@gmail.com`} className="text-blue-600 hover:underline">{APPNAME.toLowerCase()}.hms@gmail.com</a>
           </p>
         </div>
       ),
@@ -228,15 +228,14 @@ export default function PrivacyPolicyModal({ isOpen, onClose }:PrivacyPolicyModa
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.3 }}
-              className="
-              text-left relative w-full max-w-3xl max-h-[90vh] overflow-hidden rounded-lg bg-white shadow-xl"
+              className="text-left relative w-full max-w-3xl max-h-[90vh] overflow-hidden rounded-lg bg-white shadow-xl"
             >
               <div className="max-h-[90vh] overflow-y-auto">
                 {/* Header */}
                 <div className="sticky top-0 z-10 bg-white px-6 py-4 border-b border-gray-200 flex justify-between items-center">
                   <div>
                     <h2 className="text-2xl font-bold text-gray-900">Privacy Policy</h2>
-                    <p className="text-sm text-gray-600">Effective Date: [Insert Date]</p>
+                    <p className="text-sm text-gray-600">Effective Date: 27<sup>th</sup> March,2025</p>
                   </div>
                   <button
                     onClick={onClose}

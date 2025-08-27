@@ -76,7 +76,7 @@ export default function Footer() {
             <h3 className="text-md font-semibold text-blue-500 mb-2">Contact</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
-                <FaEnvelope className="text-teal-500 mt-1" />{APPNAME}.hms@gmail.com
+                <FaEnvelope className="text-teal-500 mt-1" /><a href={`mailto:${APPNAME.toLowerCase()}.hms@gmail.com`} className="text-black">{APPNAME.toLowerCase()}.hms@gmail.com</a>
               </li>
               
             </ul>
