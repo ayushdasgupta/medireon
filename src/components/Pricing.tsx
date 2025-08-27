@@ -134,7 +134,7 @@ const baseAdditionalCosts: AdditionalCost[] = [
 ];
 
 const baseAddOns: AdditionalCost[] = [
-  { title: 'Mail Notifications', desc: 299, subtitle: 'After 3000 mails' },
+  { title: 'Mail Notifications', desc: 299, subtitle: 'After 3000 mails till 15000' },
   { title: 'AI Support', desc: 799, subtitle: 'For patient side AI automation' },
   { title: 'Mobile App', desc: 600, subtitle: 'Maintenance & Auto update' },
 ];

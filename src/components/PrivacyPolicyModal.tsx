@@ -235,7 +235,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }:PrivacyPolicyModa
                 <div className="sticky top-0 z-10 bg-white px-6 py-4 border-b border-gray-200 flex justify-between items-center">
                   <div>
                     <h2 className="text-2xl font-bold text-gray-900">Privacy Policy</h2>
-                    <p className="text-sm text-gray-600">Effective Date: 27<sup>th</sup> March,2025</p>
+                    <p className="text-sm text-gray-600">Effective Date: 27<sup>th</sup> August ,2025</p>
                   </div>
                   <button
                     onClick={onClose}
