@@ -42,7 +42,10 @@ export default function Navbar() {
 
   // Mouse movement detection for desktop
   useEffect(() => {
-    if (isMobile) return;
+   if (isMobile) {
+    setIsNavbarVisible(true); // Always visible on mobile
+    return;
+  }
 
     const handleMouseMove = () => {
       setIsNavbarVisible(true);
