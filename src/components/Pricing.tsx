@@ -75,13 +75,13 @@ const basePricingPlans: PricingPlan[] = [
     desc: 'Perfect for small clinics and practices just getting started.',
     features: [
       'Access for Patients, Doctors, Receptionists, Admin',
+      'Receptionist support',
       'Appointment booking system',
       'Medical reports access',
       'Patient history tracking',
       'Basic analytics dashboard',
       { label: 'Pharmacy & lab modules', included: false },
-      { label: 'Emergency bed management', included: false },
-      {label:'Medical reports access',included:false}
+      { label: 'Emergency case handling', included: false },
     ],
     isPopular: false,
     color: 'bg-blue-100'
@@ -93,10 +93,11 @@ const basePricingPlans: PricingPlan[] = [
     features: [
       'All Basic features',
       'Bed management system',
+      'Pharmacist module',
       'Advanced analytics dashboard',
       'Priority support',
-      { label: 'Pharmacist module', included: false },
       { label: 'Lab module', included: false },
+      { label: 'Emergency case handling', included: false },
     ],
     isPopular: true,
     color: 'bg-emerald-100'
@@ -107,8 +108,9 @@ const basePricingPlans: PricingPlan[] = [
     desc: 'Complete solution for hospitals and medical centers.',
     features: [
       'All Pro features',
-      'Pharmacist module',
       'Lab module',
+      'Laboratorian support',
+      'Emergency case handling',
       'Test creation & report uploads',
       'Custom reporting tools',
     ],
@@ -116,6 +118,7 @@ const basePricingPlans: PricingPlan[] = [
     color: 'bg-cyan-100'
   },
 ];
+
 
 const customPlan: PricingPlan = {
   name: 'Custom',
@@ -135,8 +138,8 @@ const baseAdditionalCosts: AdditionalCost[] = [
 
 const baseAddOns: AdditionalCost[] = [
   { title: 'Mail Notifications', desc: 299, subtitle: 'After 3000 mails till 15000' },
-  { title: 'AI Support', desc: 799, subtitle: 'For patient side AI automation' },
-  { title: 'Mobile App', desc: 600, subtitle: 'Maintenance & Auto update' },
+  { title: 'AI Support', desc: 879, subtitle: 'For patient side AI automation' },
+  { title: 'Mobile App for Patient', desc: 499, subtitle: 'Maintenance & Auto update' },
 ];
 const formatPrice = (price: number | string, currency: CurrencyCode): string => {
   if (typeof price === 'string') {
